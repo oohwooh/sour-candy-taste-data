@@ -36,5 +36,5 @@ def radar(candy_data, CANDY_NAME):
   ax.set_ylim(0, 5)
   ax.set_title(CANDY_NAME)
   ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
-
-  plt.show()
+  
+  return plt

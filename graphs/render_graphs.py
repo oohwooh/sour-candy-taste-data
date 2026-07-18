@@ -18,4 +18,4 @@ for filename in os.listdir(PROCESSED_DATA_DIR):
         reader = csv.DictReader(f)
         candy_data[candy_name] = list(reader)
 
-radar(candy_data, "Sour Patch Kids Strips")
+radar(candy_data, "Sour Patch Kids Strips").show()
