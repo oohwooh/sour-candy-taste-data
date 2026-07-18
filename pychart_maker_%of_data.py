@@ -4,7 +4,7 @@ from data_preprocess import processdata
 import matplotlib.pyplot as plt
 
 def plot_candy_counts(candy_rows):
-    labels = list(candy_rows.keys())
+    labels = [f'{name} (n={len(rows)})' for name, rows in candy_rows.items()]
     sizes = [len(rows) for rows in candy_rows.values()]
 
     fig, ax = plt.subplots()
